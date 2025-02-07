@@ -9,6 +9,6 @@ __pycache__
 *.ipynb_checkpoints
 
 # local env
-.env
-.envrc
+#.env
+#.envrc
 .python-version

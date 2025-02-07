@@ -1,4 +1,5 @@
 import pickle
+import os
 
 from flask import Flask, render_template, request
 
@@ -39,4 +40,4 @@ def result():
 
 if __name__ == "__main__":
     app.debug = True
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=os.environ.get("PORT",8000), debug=True)
