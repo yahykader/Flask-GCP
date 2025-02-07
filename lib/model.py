@@ -41,7 +41,7 @@ def save_model(model, cloud: bool = False) -> None:
 
 if __name__ == "__main__":
     print("CLOUD : ", os.environ.get("CLOUD", "PAS DE VARIABLE DEFINIE"))
-    # X, y = load_data()
-    # model = train_model(X, y)
-    # save_model(model, os.environ.get("CLOUD", False))
-    # logging.info("🚀 Model training pipeline completed")
+    X, y = load_data()
+    model = train_model(X, y)
+    save_model(model, os.environ.get("CLOUD", False))
+    logging.info("🚀 Model training pipeline completed")
