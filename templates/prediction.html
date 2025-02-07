@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="header clearfix">
+    <h3 class="text-muted">VIVADATA - Flask Demo</h3>
+  </div>
+
+  <div class="jumbotron">
+    <h1>🏵️🌺🌸 It's a {{iris_type|title}} 🏵️🌺🌸</h1>
+  </div>
+  <div class="text-center">
+    <img src="../static/img/{{iris_type}}.jpg" class="rounded" alt="setosa" width=300>
+  </div>
+
+  <br>
+  <div class="text-center">
+    <a href="/" class="btn btn-primary">Back</a>
+  </div>
+</div>
+
+
+{% endblock %}

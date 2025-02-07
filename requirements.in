@@ -1,0 +1,11 @@
+# Web
+flask
+
+# ML Libraries
+scikit-learn
+seaborn
+
+# Code Best Practices
+pre-commit
+black
+isort
