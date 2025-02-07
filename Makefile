@@ -24,3 +24,14 @@ train :
 
 run_app :
 	python app.py
+
+
+# Docker Image
+
+.PHONY : build_docker run_docker
+
+build_docker :
+	sudo docker build -t irisapp .
+
+run_docker :
+	sudo docker run -p 5000:5000 irisapp
